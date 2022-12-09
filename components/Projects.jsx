@@ -23,13 +23,13 @@ const Projects = () => {
             title='Netflix Clone'
             backgroundImage={netflixImg}
             stack='React JS'
-            projectUrl='/property'
+            projectUrl='/netflix'
           />
           <ProjectItem
             title='Amazon Clone'
             backgroundImage={amazonImg}
             stack='React JS'
-            projectUrl='/property'
+            projectUrl='/amazon'
           />
         </div>
       </div>
