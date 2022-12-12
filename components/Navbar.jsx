@@ -5,7 +5,6 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
-import Social from './Social';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -133,9 +132,7 @@ const Navbar = () => {
                 Let&apos;s connect
               </p>
 
-              {/* <Social parent='navbar' /> */}
-
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+              <div className='social-container social-navbar'>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <FaLinkedinIn />
                 </div>
