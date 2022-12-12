@@ -12,18 +12,17 @@ const About = () => {
           <h2 className='py-4'>Who I am</h2>
           <p className='py-2 text-gray-600'>Not a common developer</p>
           <p className='py-2 text-gray-600'>
-            Durante muchos anios pense en ser director de cine, me encantan las
-            series y peliculas por lo que desde el colegio habia decidido
-            estudiar cine. Sin embargo, el ultimo anio de secundaria tuve que
-            crear una pagina para un proyecto escolar. Me causo mucha intriga
-            saber como funcionaban las paginas y como crear los disenios y
-            personalizar a mi gusto.
+            For many years I thought about being a film director, I love series
+            and movies so since high school I had decided to study filmmaking.
+            However, the last year of high school I had to create a blog for a
+            school project. I was very intrigued to know how the pages worked
+            and how to create the designs and customize it to my liking.
           </p>
           <p className='py-2 text-gray-600'>
-            Fascinado con el mundo de la programacion, decidi estudiarlo
-            profesionalmente y durante anios he pasado mucho tiempo practicando
-            y aprendiendo nuevas tecnologias para darle vida a las ideas mas
-            innovadoras que se me pueden ocurrir.
+            Fascinated with the world of programming, I decided to study it
+            professionally and for years I have spent a lot of time practicing
+            and learning new technologies to bring to life the most innovative
+            ideas I could think of.
           </p>
           <p className='py-2 text-gray-600 underline cursor-pointer'>
             Check out some of my latest projects.
