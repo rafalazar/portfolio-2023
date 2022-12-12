@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import contactImg from '../public/assets/contact.jpg';
 import Link from 'next/link';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import Social from './Social';
 
 const Contact = () => {
   return (
@@ -36,6 +37,8 @@ const Contact = () => {
               </div>
               <div>
                 <p className='uppercase pt-8'>Connect with me</p>
+
+                {/* <Social parent='contact' /> */}
                 <div className='flex items-center justify-between py-4'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <FaLinkedinIn />
