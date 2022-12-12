@@ -2,6 +2,17 @@ import Image from 'next/image';
 import React from 'react';
 
 const Skills = () => {
+  const skills = [
+    ['html', 'html'],
+    ['css', 'css'],
+    ['javascript', 'javascript'],
+    ['node js', 'node'],
+    ['react', 'react'],
+    ['next js', 'nextjs'],
+    ['typescript', 'typescript'],
+    ['tailwind', 'tailwind'],
+  ];
+
   return (
     <div id='skills' className='w-full lg:h-screen p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
@@ -10,133 +21,26 @@ const Skills = () => {
         </p>
         <h2 className='py-4'>What I Can Do</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src='/../public/assets/skills/html.png'
-                  width='64'
-                  height='64'
-                  alt='html'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase tracking-widest'>html</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src='/../public/assets/skills/css.png'
-                  width='64'
-                  height='64'
-                  alt='html'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>css</h3>
+          {skills.map((i) => (
+            <div
+              className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
+              key={i[0]}
+            >
+              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <div className='m-auto'>
+                  <Image
+                    src={`/../public/assets/skills/${i[1]}.png`}
+                    width='64'
+                    height='64'
+                    alt={`${i[0]}`}
+                  />
+                </div>
+                <div className='flex flex-col items-center justify-center'>
+                  <h3 className='uppercase'>{i[0]}</h3>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src='/../public/assets/skills/javascript.png'
-                  width='64'
-                  height='64'
-                  alt='html'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>javascript</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src='/../public/assets/skills/node.png'
-                  width='64'
-                  height='64'
-                  alt='html'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>node js</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src='/../public/assets/skills/react.png'
-                  width='64'
-                  height='64'
-                  alt='html'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>react</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src='/../public/assets/skills/nextjs.png'
-                  width='64'
-                  height='64'
-                  alt='html'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>next js</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src='/../public/assets/skills/typescript.png'
-                  width='64'
-                  height='64'
-                  alt='html'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>typescript</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src='/../public/assets/skills/tailwind.png'
-                  width='64'
-                  height='64'
-                  alt='html'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>tailwind</h3>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
