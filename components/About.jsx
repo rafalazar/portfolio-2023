@@ -28,11 +28,11 @@ const About = () => {
             Check out some of my latest projects.
           </p>
         </div>
-        <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4'>
+        <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-3'>
           <Image
             src='/../public/assets/portfolio-about.jpg'
             alt='Jordan Salazar'
-            width='350'
+            width='370'
             height='600'
             className='rounded-xl'
           />
