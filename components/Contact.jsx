@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {FaGithub, FaInstagram, FaLinkedinIn, FaTwitch} from 'react-icons/fa';
 import contactImg from '../public/assets/contact.jpg';
 import Link from 'next/link';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
@@ -45,10 +45,10 @@ const Contact = () => {
                     <FaGithub />
                   </div>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <AiOutlineMail />
+                    <FaInstagram />
                   </div>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <BsFillPersonLinesFill />
+                    <FaTwitch />
                   </div>
                 </div>
               </div>
