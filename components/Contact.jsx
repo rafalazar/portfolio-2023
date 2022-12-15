@@ -27,8 +27,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Jordan Salazar</h2>
-                <p>Full-Stack Developer</p>
+                <h2 className='py-2'>Full-Stack Developer</h2>
                 <p className='py-4'>
                   I&apos;m available for freelance or full-time positions.
                   Contact me and let&apos;s talk.
@@ -51,6 +50,10 @@ const Contact = () => {
                     <FaTwitch />
                   </div>
                 </div>
+              </div>
+              <div className='flex flex-col justify-center items-center pt-14'>
+                <p>Made by Jordan Salazar</p>
+                <p>Copyright &copy; {new Date().getFullYear()}</p>
               </div>
             </div>
           </div>
