@@ -2,7 +2,7 @@ import React, {useRef, useEffect} from 'react';
 import Typed from 'typed.js';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {FaGithub, FaInstagram, FaLinkedinIn, FaTwitch} from 'react-icons/fa';
 
 const Main = () => {
   const el = useRef(null);
@@ -11,7 +11,7 @@ const Main = () => {
     const typed = new Typed(el.current, {
       strings: ['Front-End Developer', 'Back-End Developer', 'Full-Stack Developer'],
       startDelay: 300,
-      typeSpeed: 200,
+      typeSpeed: 150,
       backSpeed: 50,
       backDelay: 100,
       smartBackspace: true,
@@ -44,19 +44,18 @@ const Main = () => {
           </p>
 
           <div className='social-container social-main'>
-            <button className='rounded-full p-4 shadow-lg'>Download my CV here</button>
-            {/*<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>*/}
-            {/*  <FaLinkedinIn />*/}
-            {/*</div>*/}
-            {/*<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>*/}
-            {/*  <FaGithub />*/}
-            {/*</div>*/}
-            {/*<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>*/}
-            {/*  <AiOutlineMail />*/}
-            {/*</div>*/}
-            {/*<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>*/}
-            {/*  <BsFillPersonLinesFill />*/}
-            {/*</div>*/}
+            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <FaLinkedinIn />
+            </div>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <FaGithub />
+            </div>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <FaInstagram />
+            </div>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <FaTwitch />
+            </div>
           </div>
         </div>
       </div>
