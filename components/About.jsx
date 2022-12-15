@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const About = () => {
@@ -25,7 +26,9 @@ const About = () => {
             ideas I could think of.
           </p>
           <p className='py-2 text-gray-600 underline cursor-pointer'>
-            Check out some of my latest projects.
+            <Link href={'/#projects'}>  
+              Check out some of my latest projects.
+            </Link>
           </p>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-3'>
