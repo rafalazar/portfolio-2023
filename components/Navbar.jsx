@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
-import {FaLinkedinIn, FaGithub, FaInstagram, FaTwitch} from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { FaLinkedinIn, FaGithub, FaTwitch } from 'react-icons/fa';
+import jordanLogo from '../public/assets/logo_portfolio.svg';
 import { useRouter } from 'next/router';
+import { BsYoutube } from 'react-icons/bs';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -60,9 +61,9 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
           <Image
-            src='/../public/assets/logo-jordan.png'
+            src={jordanLogo}
             alt='Jordan Salazar'
-            width='80'
+            width='100'
             height='50'
           />
         </Link>
@@ -98,10 +99,10 @@ const Navbar = () => {
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
                 <Image
-                  src='/../public/assets/logo-jordan.png'
+                  src={jordanLogo}
                   alt='Jordan Salazar'
-                  width='70'
-                  height='40'
+                  width='100'
+                  height='50'
                 />
               </Link>
               <div
@@ -140,10 +141,10 @@ const Navbar = () => {
                   <FaGithub />
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaInstagram />
+                  <FaTwitch />
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaTwitch />
+                  <BsYoutube />
                 </div>
               </div>
             </div>
