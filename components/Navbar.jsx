@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import {FaLinkedinIn, FaGithub, FaInstagram, FaTwitch} from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
 
@@ -127,7 +127,7 @@ const Navbar = () => {
                 </Link>
               ))}
             </ul>
-            <div className='pt-40'>
+            <div className='pt-24'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
                 Let&apos;s connect
               </p>
@@ -140,10 +140,10 @@ const Navbar = () => {
                   <FaGithub />
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <AiOutlineMail />
+                  <FaInstagram />
                 </div>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <BsFillPersonLinesFill />
+                  <FaTwitch />
                 </div>
               </div>
             </div>
