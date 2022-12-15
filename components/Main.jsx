@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 import { BsYoutube } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn, FaTwitch } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Main = () => {
   const el = useRef(null);
@@ -52,18 +53,32 @@ const Main = () => {
           </p>
 
           <div className='social-container social-main'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <FaLinkedinIn />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <FaGithub />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <FaTwitch />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <BsYoutube />
-            </div>
+            <Link
+              href={'https://www.linkedin.com/in/rafalazar1005/'}
+              target={'_blank'}
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <FaLinkedinIn />
+              </div>
+            </Link>
+            <Link href={'https://github.com/rafalazar'} target={'_blank'}>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <FaGithub />
+              </div>
+            </Link>
+            <Link href={'https://www.twitch.tv/rafalacar'} target={'_blank'}>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <FaTwitch />
+              </div>
+            </Link>
+            <Link
+              href={'https://www.youtube.com/@rafalazar4046'}
+              target={'_blank'}
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <BsYoutube />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

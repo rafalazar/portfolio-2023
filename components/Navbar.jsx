@@ -134,18 +134,35 @@ const Navbar = () => {
               </p>
 
               <div className='social-container social-navbar'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaGithub />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaTwitch />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <BsYoutube />
-                </div>
+                <Link
+                  href={'https://www.linkedin.com/in/rafalazar1005/'}
+                  target={'_blank'}
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaLinkedinIn />
+                  </div>
+                </Link>
+                <Link href={'https://github.com/rafalazar'} target={'_blank'}>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaGithub />
+                  </div>
+                </Link>
+                <Link
+                  href={'https://www.twitch.tv/rafalacar'}
+                  target={'_blank'}
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaTwitch />
+                  </div>
+                </Link>
+                <Link
+                  href={'https://www.youtube.com/@rafalazar4046'}
+                  target={'_blank'}
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <BsYoutube />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
