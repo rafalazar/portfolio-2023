@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import amazonImg from '../public/assets/projects/amazon-project.jpg';
+import amazonImg from '../public/static/images/amazon-project.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 const amazon = () => {
