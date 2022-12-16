@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { BsYoutube } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn, FaTwitch } from 'react-icons/fa';
-import contactImg from '../public/assets/contact.jpg';
+import contactImg from '../public/static/images/contact.jpg';
 import Link from 'next/link';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 

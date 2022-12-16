@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-3'>
           <Image
-            src='/../public/assets/portfolio-about.jpg'
+            src='/../public/static/images/portfolio-about.jpg'
             alt='Jordan Salazar'
             width='370'
             height='600'

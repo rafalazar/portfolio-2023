@@ -1,7 +1,7 @@
 import React from 'react';
-import disneyImg from '../public/assets/projects/disney-project.jpg';
-import amazonImg from '../public/assets/projects/amazon-project.jpg';
-import netflixImg from '../public/assets/projects/netflix-project.jpg';
+import disneyImg from '../public/static/images/disney-project.jpg';
+import amazonImg from '../public/static/images/amazon-project.jpg';
+import netflixImg from '../public/static/images/netflix-project.jpg';
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
