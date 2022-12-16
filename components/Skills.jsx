@@ -1,16 +1,26 @@
 import Image from 'next/image';
 import React from 'react';
+import {
+  htmlSkill,
+  cssSkill,
+  jsSkill,
+  nodeSkill,
+  reactSkill,
+  nextSkill,
+  tsSkill,
+  tailwindSkill,
+} from './skills-images';
 
 const Skills = () => {
   const skills = [
-    ['html', 'html'],
-    ['css', 'css'],
-    ['javascript', 'javascript'],
-    ['node js', 'node'],
-    ['react', 'react'],
-    ['next js', 'nextjs'],
-    ['typescript', 'typescript'],
-    ['tailwind', 'tailwind'],
+    ['html', htmlSkill],
+    ['css', cssSkill],
+    ['javascript', jsSkill],
+    ['node js', nodeSkill],
+    ['react', reactSkill],
+    ['next js', nextSkill],
+    ['typescript', tsSkill],
+    ['tailwind', tailwindSkill],
   ];
 
   return (
@@ -29,7 +39,7 @@ const Skills = () => {
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
-                    src={`/../public/static/images/${i[1]}.png`}
+                    src={i[1]}
                     width='64'
                     height='64'
                     alt={`${i[0]}`}
