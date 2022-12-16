@@ -77,7 +77,7 @@ const Contact = () => {
 
           <div className='col-span-3 w-full h-auto shadow-xl rounded-xl lg:p-4'>
             <div className='p-4'>
-              <form>
+              <form name='formContact' action='https://formsubmit.co/ab5de6c200178acf60060d82d28a2027' method='POST'>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2' htmlFor=''>
@@ -86,6 +86,8 @@ const Contact = () => {
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
+                      name='name'
+                      required
                     />
                   </div>
                   <div className='flex flex-col'>
@@ -95,6 +97,7 @@ const Contact = () => {
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
+                      name='phoneNumber'
                     />
                   </div>
                 </div>
@@ -105,6 +108,8 @@ const Contact = () => {
                   <input
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     type='email'
+                    name='email'
+                    required
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -114,6 +119,8 @@ const Contact = () => {
                   <input
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     type='text'
+                    name='subject'
+                    required
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -123,6 +130,8 @@ const Contact = () => {
                   <textarea
                     className='border-2 rounded-lg p-3 border-gray-300 resize-none'
                     rows='10'
+                    name='message'
+                    required
                   ></textarea>
                 </div>
                 <button className='w-full p-4 text-gray-100 mt-4'>
