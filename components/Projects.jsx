@@ -1,10 +1,17 @@
 import React from 'react';
 import disneyImg from '../public/assets/projects/disney-project.jpg';
-import netflixImg from '../public/assets/projects/netflix-project.jpg';
 import amazonImg from '../public/assets/projects/amazon-project.jpg';
+import netflixImg from '../public/assets/projects/netflix-project.jpg';
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
+
+  const projects = [
+    {id: 1, title: 'Disney + Clone', backgroundImg: disneyImg, stack: ['React, Firebase, Styled-Components'], projectUrl: 'https://disneyplus-clone-8b014.web.app/', projectRepo: 'https://github.com/rafalazar/disney-plus-clone'},
+    {id: 2, title: 'Amazon Clone', backgroundImg: amazonImg, stack: ['React, Redux, Firebase'], projectUrl: 'https://clone-3ae96.web.app/', projectRepo: 'https://github.com/rafalazar/amazon-clone'},
+    {id: 3, title: 'Netflix Clone', backgroundImg: netflixImg, stack: ['React, Axios, TheMovie API'], projectUrl: 'https://netflix-clone-fc1ec.web.app/', projectRepo: 'https://github.com/rafalazar/netflix-clone'}
+  ]
+
   return (
     <div id='projects' className='w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
@@ -13,24 +20,18 @@ const Projects = () => {
         </p>
         <h2 className='py-4'>What I&apos;ve built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
-          <ProjectItem
-            title='Disney + Clone'
-            backgroundImage={disneyImg}
-            stack='React JS'
-            projectUrl='/disney'
-          />
-          <ProjectItem
-            title='Netflix Clone'
-            backgroundImage={netflixImg}
-            stack='React JS'
-            projectUrl='/netflix'
-          />
-          <ProjectItem
-            title='Amazon Clone'
-            backgroundImage={amazonImg}
-            stack='React JS'
-            projectUrl='/amazon'
-          />
+          {
+            projects.map(i => (
+              <ProjectItem
+                key={i['id']}
+                title={i['title']}
+                backgroundImage={i['backgroundImg']}
+                stack={i['stack']}
+                projectUrl={i['projectUrl']}
+                projectRepo={i['projectRepo']}
+              />
+            ))
+          }
         </div>
       </div>
     </div>
