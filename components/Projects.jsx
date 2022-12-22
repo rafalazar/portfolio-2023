@@ -2,14 +2,16 @@ import React from 'react';
 import disneyImg from '../public/static/images/disney-project.jpg';
 import amazonImg from '../public/static/images/amazon-project.jpg';
 import netflixImg from '../public/static/images/netflix-project.jpg';
+import portfolioImg from '../public/static/images/portfolio-project.jpg';
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
 
   const projects = [
-    {id: 1, title: 'Disney + Clone', backgroundImg: disneyImg, stack: ['React, Firebase, Styled-Components'], projectUrl: 'https://disneyplus-clone-8b014.web.app/', projectRepo: 'https://github.com/rafalazar/disney-plus-clone'},
-    {id: 2, title: 'Amazon Clone', backgroundImg: amazonImg, stack: ['React, Redux, Firebase'], projectUrl: 'https://clone-3ae96.web.app/', projectRepo: 'https://github.com/rafalazar/amazon-clone'},
-    {id: 3, title: 'Netflix Clone', backgroundImg: netflixImg, stack: ['React, Axios, TheMovie API'], projectUrl: 'https://netflix-clone-fc1ec.web.app/', projectRepo: 'https://github.com/rafalazar/netflix-clone'}
+    {id: 1, title: 'Jordan Portfolio', backgroundImg: portfolioImg, stack: ['Next JS, React, Tailwind'], projectUrl: 'https://rafalazar.vercel.app/', projectRepo: 'https://github.com/rafalazar/portfolio-2023'},
+    {id: 2, title: 'Disney + Clone', backgroundImg: disneyImg, stack: ['React, Firebase, Styled-Components'], projectUrl: 'https://disneyplus-clone-8b014.web.app/', projectRepo: 'https://github.com/rafalazar/disney-plus-clone'},
+    {id: 3, title: 'Amazon Clone', backgroundImg: amazonImg, stack: ['React, Redux, Firebase'], projectUrl: 'https://clone-3ae96.web.app/', projectRepo: 'https://github.com/rafalazar/amazon-clone'},
+    {id: 4, title: 'Netflix Clone', backgroundImg: netflixImg, stack: ['React, Axios, TheMovie API'], projectUrl: 'https://netflix-clone-fc1ec.web.app/', projectRepo: 'https://github.com/rafalazar/netflix-clone'},
   ]
 
   return (
