@@ -9,6 +9,9 @@ import {
   nextSkill,
   tsSkill,
   tailwindSkill,
+  gitSkill,
+  gcpSkill,
+  postgresqlSkill
 } from './skills-images';
 
 const Skills = () => {
@@ -21,6 +24,9 @@ const Skills = () => {
     ['next js', nextSkill],
     ['typescript', tsSkill],
     ['tailwind', tailwindSkill],
+    ['postgresql', postgresqlSkill],
+    ['git', gitSkill],
+    ['gcp', gcpSkill],
   ];
 
   return (

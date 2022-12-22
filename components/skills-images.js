@@ -6,3 +6,6 @@ export { default as reactSkill } from '../public/static/images/react.png';
 export { default as nextSkill } from '../public/static/images/nextjs.png';
 export { default as tsSkill } from '../public/static/images/typescript.png';
 export { default as tailwindSkill } from '../public/static/images/tailwind.png';
+export { default as gitSkill } from '../public/static/images/git.png';
+export { default as gcpSkill } from '../public/static/images/gcp.png';
+export { default as postgresqlSkill } from '../public/static/images/postgresql.png';
